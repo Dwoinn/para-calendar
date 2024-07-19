@@ -18,12 +18,13 @@ interface Props {
 const classNames = {
   popupSection: ['dropdown-section', 'state-section'],
   popupSectionItem: cls('popup-section-item', 'popup-button'),
-  stateIcon: cls('icon', 'ic-state'),
+  statePaidIcon: cls('icon', 'ic-state-paid'),
+  stateUnpaidIcon: cls('icon', 'ic-state-unpaid'),
   arrowIcon: cls('icon', 'ic-dropdown-arrow'),
   content: cls('content', 'event-state'),
 };
 
-export function EventStateSelector({ eventState = 'Busy', formStateDispatch }: Props) {
+export function EventStateSelector({ eventState = 'Unpaid', formStateDispatch }: Props) {
   const { isOpened, setOpened, toggleDropdown } = useDropdownState();
 
   const handleChangeEventState = (state: EventState) =>
@@ -32,12 +33,12 @@ export function EventStateSelector({ eventState = 'Busy', formStateDispatch }: P
   return (
     <PopupSection onClick={toggleDropdown} classNames={classNames.popupSection}>
       <button type="button" className={classNames.popupSectionItem}>
-        <span className={classNames.stateIcon} />
+        <span className={eventState === 'Unpaid' ? classNames.stateUnpaidIcon : classNames.statePaidIcon} />
         <span className={classNames.content}>
-          {eventState === 'Busy' ? (
-            <Template template="popupStateBusy" />
+          {eventState === 'Unpaid' ? (
+            <Template template="popupStateUnpaid" />
           ) : (
-            <Template template="popupStateFree" />
+            <Template template="popupStatePaid" />
           )}
         </span>
         <span className={classNames.arrowIcon} />

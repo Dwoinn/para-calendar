@@ -44,6 +44,7 @@ export interface EventFormPopupParam extends BasePopupParam {
   end: TZDate;
   isAllday: boolean;
   isPrivate: boolean;
+  isPayable: boolean;
   eventState?: EventState;
 }
 

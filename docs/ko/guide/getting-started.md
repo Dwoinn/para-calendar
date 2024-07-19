@@ -34,8 +34,8 @@ TOAST UI 제품들은 [npm](https://www.npmjs.com/) 패키지 매니저에 등�
 #### npm
 
 ```sh
-npm install @toast-ui/calendar # 최신 버전
-npm install @toast-ui/calendar@<version> # 2.0 이후 특정 버전
+npm install @para-calendar/calendar # 최신 버전
+npm install @para-calendar/calendar@<version> # 2.0 이후 특정 버전
 npm install tui-calendar@<version> # 1.x 특정 버전
 ```
 
@@ -94,12 +94,12 @@ TOAST UI Calendar는 생성자 함수를 통해 인스턴스를 생성할 수 �
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
-import Calendar from '@toast-ui/calendar';
+import Calendar from '@para-calendar/calendar';
 ```
 
 ```js
 /* Node.js 환경에서 CommonJS */
-const Calendar = require('@toast-ui/calendar');
+const Calendar = require('@para-calendar/calendar');
 ```
 
 ```js
@@ -115,12 +115,12 @@ IE11의 번들 크기는 기본 번들보다 30%가량 크기 때문에 반드�
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
-import Calendar from '@toast-ui/calendar/ie11';
+import Calendar from '@para-calendar/calendar/ie11';
 ```
 
 ```js
 /* Node.js 환경에서 CommonJS */
-const Calendar = require('@toast-ui/calendar/ie11');
+const Calendar = require('@para-calendar/calendar/ie11');
 ```
 
 ```html
@@ -137,12 +137,12 @@ Calendar를 사용하기 위해서는 CSS 파일을 추가해야 한다. import,
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
-import '@toast-ui/calendar/dist/toastui-calendar.min.css'; // Calendar 스타일
+import '@para-calendar/calendar/dist/toastui-calendar.min.css'; // Calendar 스타일
 ```
 
 ```js
 /* Node.js 환경에서 CommonJS */
-require('@toast-ui/calendar/dist/toastui-calendar.min.css');
+require('@para-calendar/calendar/dist/toastui-calendar.min.css');
 ```
 
 ```html

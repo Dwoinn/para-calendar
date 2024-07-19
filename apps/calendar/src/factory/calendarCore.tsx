@@ -107,12 +107,13 @@ import type { ThemeState, ThemeStore } from '@t/theme';
  * @property {string} [category] - Category of the event. Available categories are 'milestone', 'task', 'time' and 'allday'.
  * @property {string} [dueDateClass] - Classification of work events. (before work, before lunch, before work)
  * @property {string} [recurrenceRule] - Recurrence rule of the event.
- * @property {string} [state] - State of the event. Available states are 'Busy', 'Free'.
+ * @property {string} [state] - State of the event. Available states are 'Unpaid', 'Paid'.
  * @property {boolean} [isVisible] - Whether the event is visible or not.
  * @property {boolean} [isPending] - Whether the event is pending or not.
  * @property {boolean} [isFocused] - Whether the event is focused or not.
  * @property {boolean} [isReadOnly] - Whether the event is read only or not.
  * @property {boolean} [isPrivate] - Whether the event is private or not.
+ * @property {boolean} [isPayable] - Whether the event is payable or not.
  * @property {string} [color] - Text color of the event.
  * @property {string} [backgroundColor] - Background color of the event.
  * @property {string} [dragBackgroundColor] - Background color of the event during dragging.
@@ -853,7 +854,7 @@ export default abstract class CalendarCore
     const { showFormPopup } = this.getStoreDispatchers().popup;
 
     const eventModel = new EventModel(event);
-    const { title, location, start, end, isAllday, isPrivate, state: eventState } = eventModel;
+    const { title, location, start, end, isAllday, isPrivate, isPayable, state: eventState } = eventModel;
 
     showFormPopup({
       isCreationPopup: true,
@@ -864,6 +865,7 @@ export default abstract class CalendarCore
       end,
       isAllday,
       isPrivate,
+      isPayable,
       eventState,
     });
   }

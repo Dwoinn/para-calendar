@@ -9,7 +9,6 @@ import { ClosePopupButton } from '@src/components/popup/closePopupButton';
 import { ConfirmPopupButton } from '@src/components/popup/confirmPopupButton';
 import { DateSelector } from '@src/components/popup/dateSelector';
 import { EventStateSelector } from '@src/components/popup/eventStateSelector';
-import { LocationInputBox } from '@src/components/popup/locationInputBox';
 import { PopupSection } from '@src/components/popup/popupSection';
 import { TitleInputBox } from '@src/components/popup/titleInputBox';
 import { Template } from '@src/components/template';
@@ -97,7 +96,7 @@ export function EventFormPopup() {
   const { calendars } = useStore(calendarSelector);
   const { hideAllPopup } = useDispatch('popup');
   const popupParams = useStore(eventFormPopupParamSelector);
-  const { start, end, popupArrowPointPosition, close, isCreationPopup, event } = popupParams ?? {};
+  const { start, end, popupArrowPointPosition, close, isCreationPopup, isPayable, event } = popupParams ?? {};
   const eventBus = useEventBus();
   const formPopupSlot = useFloatingLayer('formPopupSlot');
   const [formState, formStateDispatch] = useFormState(calendars[0]?.id);
@@ -147,6 +146,7 @@ export function EventFormPopup() {
           location: popupParams.location,
           isAllday: popupParams.isAllday,
           isPrivate: popupParams.isPrivate,
+          isPayable: popupParams.isPayable,
           calendarId: event.calendarId,
           state: popupParams.eventState,
         },
@@ -206,7 +206,6 @@ export function EventFormPopup() {
             isPrivate={formState.isPrivate}
             formStateDispatch={formStateDispatch}
           />
-          <LocationInputBox location={formState.location} formStateDispatch={formStateDispatch} />
           <DateSelector
             start={start}
             end={end}
@@ -214,7 +213,9 @@ export function EventFormPopup() {
             formStateDispatch={formStateDispatch}
             ref={datePickerRef}
           />
-          <EventStateSelector eventState={formState.state} formStateDispatch={formStateDispatch} />
+          {isPayable && (
+            <EventStateSelector eventState={formState.state} formStateDispatch={formStateDispatch} />
+          )}
           <ClosePopupButton type="form" close={close} />
           <PopupSection>
             <ConfirmPopupButton>

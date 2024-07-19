@@ -141,6 +141,7 @@ export function useGridSelection<DateCollection>({
           end: endDate,
           isAllday: type !== 'timeGrid',
           isPrivate: false,
+          isPayable: false,
           popupArrowPointPosition,
           close: clearAll,
         });

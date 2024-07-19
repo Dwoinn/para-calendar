@@ -120,6 +120,7 @@ export function EventDetailPopup() {
     start = new TZDate(),
     end = new TZDate(),
     location,
+    isPayable,
     state,
     isReadOnly,
     isPrivate,
@@ -141,6 +142,7 @@ export function EventDetailPopup() {
         end,
         isAllday,
         isPrivate,
+        isPayable,
         eventState: state,
         popupArrowPointPosition,
       });

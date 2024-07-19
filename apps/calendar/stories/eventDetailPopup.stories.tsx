@@ -63,6 +63,7 @@ EventDetailPopupWithCalendars.args = {
     recurrenceRule: 'recurrence rule',
     isReadOnly: false,
     backgroundColor: '#03bd9e',
-    state: 'Busy',
+    state: 'Unpaid',
+    isPayable: false
   }),
 };

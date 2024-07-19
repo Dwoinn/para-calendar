@@ -30,7 +30,7 @@ const defaultFormState: EventObject = {
   location: '',
   isAllday: false,
   isPrivate: false,
-  state: 'Busy',
+  state: 'Unpaid',
 };
 
 // eslint-disable-next-line complexity

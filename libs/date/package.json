@@ -1,5 +1,5 @@
 {
-  "name": "@toast-ui/date",
+  "name": "@para-calendar/date",
   "version": "0.0.3",
   "description": "TOAST UI Components: A Date interface  which is extensible. It provides UTCDate, LocalDate, MomentDate.",
   "main": "dist/toastui-date.js",

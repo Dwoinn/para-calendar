@@ -7,7 +7,7 @@ You can use the `Calendar` class to create a calendar instance. You need to spec
 Add a container element where TOAST UI Calendar will be created. **This element must have an appropriate height. (600px or higher is recommended)**
 
 ```js
-import { Calendar } from '@toast-ui/calendar';
+import { Calendar } from '@para-calendar/calendar';
 
 // Passing elements directly
 const container = document.querySelector('#container');
@@ -24,6 +24,7 @@ const calendar = new Calendar(container, {
   // Options of the calendar instance
   defaultView: 'month',
   isReadOnly: true,
+  isPayable: false,
   timezone: {
     // ...
   },
@@ -254,7 +255,7 @@ calendar.updateEvent('event1', 'cal1', {
 // When changing multiple properties
 calendar.updateEvent('event1', 'cal1', {
   title: 'Going vacation',
-  state: 'Free',
+  state: 'Paid',
   start: '2022-05-30T00:00:00',
   end: '2022-06-03T23:59:59',
 });

@@ -23,7 +23,8 @@ describe('event form popup', () => {
   const end = new TZDate();
   const isAllday = false;
   const isPrivate = false;
-  const state = 'Busy';
+  const isPayable = false;
+  const state = 'Unpaid';
   const mockFn = jest.fn();
 
   const Component = () => {
@@ -41,6 +42,7 @@ describe('event form popup', () => {
         end,
         isAllday,
         isPrivate,
+        isPayable,
         eventState: state,
         popupArrowPointPosition: {
           top: 0,
@@ -159,6 +161,7 @@ describe('event form popup', () => {
       end,
       isAllday,
       isPrivate,
+      isPayable,
       state,
       title: '',
       location: '',
@@ -182,6 +185,7 @@ describe('event form popup', () => {
       end,
       isAllday,
       isPrivate,
+      isPayable,
       state,
       title: changedTitle,
       location: changedLocation,

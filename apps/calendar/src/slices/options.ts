@@ -139,6 +139,7 @@ export function createOptionsSlice(options: Options = {}): OptionsSlice {
       useFormPopup: options.useFormPopup ?? false,
       useDetailPopup: options.useDetailPopup ?? false,
       isReadOnly: options.isReadOnly ?? false,
+      isPayable: options.isPayable ?? false,
       week: initializeWeekOptions(options.week),
       month: initializeMonthOptions(options.month),
       gridSelection: initializeGridSelectionOptions(options.gridSelection),

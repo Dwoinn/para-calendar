@@ -2,7 +2,7 @@
 
 > A JavaScript calendar that is full featured. Now your service just got the customizable calendar.
 
-[![npm](https://img.shields.io/npm/v/@toast-ui/calendar.svg)](https://www.npmjs.com/package/@toast-ui/calendar)
+[![npm](https://img.shields.io/npm/v/@para-calendar/calendar.svg)](https://www.npmjs.com/package/@para-calendar/calendar)
 [![license](https://img.shields.io/github/license/nhn/tui.calendar.svg)](https://github.com/nhn/tui.calendar/blob/master/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/tui.calendar/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by NHN Cloud](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-NHN_Cloud-ff1414.svg)](https://github.com/nhn)
@@ -47,7 +47,7 @@ const calendar = new Calendar('#calendar', {
 ### Using npm
 
 ```sh
-npm install --save @toast-ui/calendar
+npm install --save @para-calendar/calendar
 ```
 
 ### Via Contents Delivery Network (CDN)
@@ -95,14 +95,14 @@ TOAST UI Calendar can be instantiated through the constructor function. There ar
 
 ```js
 /* ES6 module in Node.js environment */
-import Calendar from '@toast-ui/calendar';
-import '@toast-ui/calendar/dist/toastui-calendar.min.css';
+import Calendar from '@para-calendar/calendar';
+import '@para-calendar/calendar/dist/toastui-calendar.min.css';
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-const Calendar = require('@toast-ui/calendar');
-require('@toast-ui/calendar/dist/toastui-calendar.min.css');
+const Calendar = require('@para-calendar/calendar');
+require('@para-calendar/calendar/dist/toastui-calendar.min.css');
 ```
 
 ```js

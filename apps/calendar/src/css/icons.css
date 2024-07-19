@@ -16,8 +16,12 @@
   background: url('./image/ic-date.png') no-repeat;
 }
 
-.icon.ic-state {
-  background: url('./image/ic-state.png') no-repeat;
+.icon.ic-state-paid {
+  background: url('./image/ic-state-paid.png') no-repeat;
+}
+
+.icon.ic-state-unpaid {
+  background: url('./image/ic-state-unpaid.png') no-repeat;
 }
 
 .icon.ic-private {
@@ -86,8 +90,13 @@
   top: -4px;
 }
 
-.ic-state-b {
-  background: url('./image/ic-state-b.png') no-repeat;
+.ic-state-paid-b {
+  background: url('./image/ic-state-paid-b.png') no-repeat;
+  top: -4px;
+}
+
+.ic-state-unpaid-b {
+  background: url('./image/ic-state-unpaid-b.png') no-repeat;
   top: -4px;
 }
 

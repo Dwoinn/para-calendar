@@ -81,8 +81,8 @@ export interface Template {
   timegridDisplayTime: (props: TemplateNow) => TemplateReturnType;
   timegridNowIndicatorLabel: (props: TemplateNow) => TemplateReturnType;
   popupIsAllday: () => TemplateReturnType;
-  popupStateFree: () => TemplateReturnType;
-  popupStateBusy: () => TemplateReturnType;
+  popupStatePaid: () => TemplateReturnType;
+  popupStateUnpaid: () => TemplateReturnType;
   titlePlaceholder: () => TemplateReturnType;
   locationPlaceholder: () => TemplateReturnType;
   startDatePlaceholder: () => TemplateReturnType;

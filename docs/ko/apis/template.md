@@ -52,8 +52,8 @@ calendar.setOptions({
 | [timegridDisplayTime](#timegriddisplaytime)               | TemplateNow                      | 주간/일간뷰의 primary 타임존 외의 타임존 시간 표시                 |
 | [timegridNowIndicatorLabel](#timegridnowindicatorlabel)   | TemplateNow                      | 주간/일간뷰의 현재 시간 표시                                       |
 | [popupIsAllday](#popupisallday)                           | 없음                             | 이벤트 폼 팝업에서 all day 텍스트                                  |
-| [popupStateFree](#popupstatefree)                         | 없음                             | 이벤트 폼 팝업에서 이벤트 한가함(free) 상태 텍스트                 |
-| [popupStateBusy](#popupstatebusy)                         | 없음                             | 이벤트 폼 팝업에서 이벤트 바쁨(busy) 상태 텍스트                   |
+| [popupStatePaid](#popupstatefree)                         | 없음                             | 이벤트 폼 팝업에서 이벤트 한가함(free) 상태 텍스트                 |
+| [popupStateUnpaid](#popupstatebusy)                         | 없음                             | 이벤트 폼 팝업에서 이벤트 바쁨(busy) 상태 텍스트                   |
 | [titlePlaceholder](#titleplaceholder)                     | 없음                             | 이벤트 폼 팝업에서 이벤트명 placeholder                            |
 | [locationPlaceholder](#locationplaceholder)               | 없음                             | 이벤트 폼 팝업에서 이벤트 장소 placeholder                         |
 | [startDatePlaceholder](#startdateplaceholder)             | 없음                             | 이벤트 폼 팝업에서 이벤트 시작 날짜 placeholder                    |
@@ -560,15 +560,15 @@ calendar.setOptions({
 
 [⬆ 목록으로 돌아가기](#템플릿-목록)
 
-#### popupStateFree
+#### popupStatePaid
 
 이벤트 폼 팝업에서 이벤트의 한가함(free) 상태를 커스터마이징할 수 있다.
 
 ```js
 calendar.setOptions({
   template: {
-    popupStateFree() {
-      return 'Free';
+    popupStatePaid() {
+      return 'Paid';
     },
   },
 });
@@ -576,15 +576,15 @@ calendar.setOptions({
 
 [⬆ 목록으로 돌아가기](#템플릿-목록)
 
-#### popupStateBusy
+#### popupStateUnpaid
 
 이벤트 폼 팝업에서 이벤트의 바쁨(busy) 상태를 커스터마이징할 수 있다.
 
 ```js
 calendar.setOptions({
   template: {
-    popupStateBusy() {
-      return 'Busy';
+    popupStateUnpaid() {
+      return 'Unpaid';
     },
   },
 });
@@ -800,7 +800,7 @@ calendar.setOptions({
 calendar.setOptions({
   template: {
     popupDetailState({ state }) {
-      return state || 'Busy';
+      return state || 'Unpaid';
     },
   },
 });

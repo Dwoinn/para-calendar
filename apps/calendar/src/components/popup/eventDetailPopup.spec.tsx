@@ -29,7 +29,8 @@ describe('event detail popup', () => {
     recurrenceRule: 'recurrence rule',
     isReadOnly: false,
     backgroundColor: '#03bd9e',
-    state: 'Busy',
+    state: 'Unpaid',
+    isPayable: false,
   });
   const Wrapper = ({ children }: PropsWithChildren) => {
     const { showDetailPopup } = useDispatch('popup');

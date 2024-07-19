@@ -18,13 +18,14 @@ const classNames = {
   locationIcon: cls('icon', 'ic-location-b'),
   repeatIcon: cls('icon', 'ic-repeat-b'),
   userIcon: cls('icon', 'ic-user-b'),
-  stateIcon: cls('icon', 'ic-state-b'),
+  statePaidIcon: cls('icon', 'ic-state-paid-b'),
+  stateUnpaidIcon: cls('icon', 'ic-state-unpaid-b'),
   calendarDotIcon: cls('icon', 'calendar-dot'),
 };
 
 // eslint-disable-next-line complexity
 export function EventDetailSectionDetail({ event }: Props) {
-  const { location, recurrenceRule, attendees, state, calendarId, body } = event;
+  const { location, recurrenceRule, attendees, state, isPayable, calendarId, body } = event;
   const calendar = useCalendarById(calendarId);
 
   return (
@@ -53,9 +54,9 @@ export function EventDetailSectionDetail({ event }: Props) {
           </span>
         </div>
       )}
-      {state && (
+      {isPayable && state && (
         <div className={classNames.detailItem}>
-          <span className={classNames.stateIcon} />
+          <span className={state === 'Unpaid' ? classNames.stateUnpaidIcon : classNames.statePaidIcon} />
           <span className={classNames.content}>
             <Template template="popupDetailState" param={event} as="span" />
           </span>

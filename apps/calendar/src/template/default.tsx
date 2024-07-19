@@ -188,12 +188,12 @@ export const templates: Template = {
     return 'All day';
   },
 
-  popupStateFree() {
-    return 'Free';
+  popupStatePaid() {
+    return 'Paid';
   },
 
-  popupStateBusy() {
-    return 'Busy';
+  popupStateUnpaid() {
+    return 'Unpaid';
   },
 
   titlePlaceholder() {
@@ -255,7 +255,7 @@ export const templates: Template = {
   },
 
   popupDetailState({ state }: EventObjectWithDefaultValues) {
-    return state || 'Busy';
+    return state || 'Unpaid';
   },
 
   popupDetailRecurrenceRule({ recurrenceRule }: EventObjectWithDefaultValues) {

@@ -42,7 +42,7 @@ export default class EventModel implements Omit<EventObjectWithDefaultValues, '_
 
   recurrenceRule = '';
 
-  state: EventState = 'Busy';
+  state: EventState = 'Unpaid';
 
   isVisible = true;
 
@@ -53,6 +53,8 @@ export default class EventModel implements Omit<EventObjectWithDefaultValues, '_
   isReadOnly = false;
 
   isPrivate = false;
+
+  isPayable = false;
 
   color?: string;
 
@@ -98,12 +100,13 @@ export default class EventModel implements Omit<EventObjectWithDefaultValues, '_
     category = 'time',
     dueDateClass = '',
     recurrenceRule = '',
-    state = 'Busy',
+    state = 'Unpaid',
     isVisible = true,
     isPending = false,
     isFocused = false,
     isReadOnly = false,
     isPrivate = false,
+    isPayable = false,
     color,
     backgroundColor,
     dragBackgroundColor,
@@ -129,6 +132,7 @@ export default class EventModel implements Omit<EventObjectWithDefaultValues, '_
     this.isFocused = isFocused;
     this.isReadOnly = isReadOnly;
     this.isPrivate = isPrivate;
+    this.isPayable = isPayable;
     this.color = color;
     this.backgroundColor = backgroundColor;
     this.dragBackgroundColor = dragBackgroundColor;
@@ -321,6 +325,7 @@ export default class EventModel implements Omit<EventObjectWithDefaultValues, '_
       isFocused: this.isFocused,
       isReadOnly: this.isReadOnly,
       isPrivate: this.isPrivate,
+      isPayable: this.isPayable,
       color: this.color,
       backgroundColor: this.backgroundColor,
       dragBackgroundColor: this.dragBackgroundColor,

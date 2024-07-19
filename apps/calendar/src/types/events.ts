@@ -36,7 +36,7 @@ export interface CalendarData {
 
 export type EventCategory = 'milestone' | 'task' | 'allday' | 'time'; // | 'background';
 
-export type EventState = 'Busy' | 'Free';
+export type EventState = 'Unpaid' | 'Paid';
 
 export type EventObjectWithDefaultValues = MarkOptional<
   Required<EventObject>,
@@ -119,7 +119,7 @@ export interface EventObject {
   recurrenceRule?: string;
 
   /**
-   * State of the event. The default is 'Busy'
+   * State of the event. The default is 'Unpaid'
    */
   state?: EventState;
 
@@ -147,6 +147,11 @@ export interface EventObject {
    * Determine whether the event is private
    */
   isPrivate?: boolean;
+
+  /**
+   * Determine whether the event is a payable one
+   */
+  isPayable?: boolean;
 
   /**
    * Text color of the event element
@@ -181,6 +186,7 @@ export interface EventObject {
 
 export type BooleanKeyOfEventObject =
   | 'isPrivate'
+  | 'isPayable'
   | 'isAllday'
   | 'isPending'
   | 'isFocused'

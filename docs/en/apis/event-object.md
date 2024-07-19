@@ -17,8 +17,9 @@ calendar.createEvents([
     location: 'Meeting Room A',
     attendees: ['A', 'B', 'C'],
     category: 'time',
-    state: 'Free',
+    state: 'Paid',
     isReadOnly: true,
+    isPayable: false,
     color: '#fff',
     backgroundColor: '#ccc',
     customStyle: {
@@ -53,12 +54,13 @@ interface EventObject {
   attendees?: string[];
   category?: 'milestone' | 'task' | 'allday' | 'time';
   recurrenceRule?: string;
-  state?: 'Busy' | 'Free';
+  state?: 'Unpaid' | 'Paid';
   isVisible?: boolean;
   isPending?: boolean;
   isFocused?: boolean;
   isReadOnly?: boolean;
   isPrivate?: boolean;
+  isPayable?: boolean;
   color?: string;
   backgroundColor?: string;
   dragBackgroundColor?: string;
@@ -84,12 +86,13 @@ interface EventObject {
 | [category](#category)                            | <code>'time'</code>       | Event category. One of <code>milestone</code>, <code>task</code>, <code>allday</code>, or <code>time</code>.                                                                                                                                                      |
 | dueDateClass                                     | <code>''</code>           | Category for task events. Any string is allowed.                                                                                                                                                                                                                  |
 | recurrenceRule                                   | <code>''</code>           | Event recurrence rule                                                                                                                                                                                                                                             |
-| state                                            | <code>'Busy'</code>       | Event state. One of <code>Busy</code> and <code>Free</code>.                                                                                                                                                                                                      |
+| state                                            | <code>'Unpaid'</code>       | Event state. One of <code>Unpaid</code> and <code>Paid</code>.                                                                                                                                                                                                      |
 | isVisible                                        | <code>true</code>         | Whether the event is visible or not                                                                                                                                                                                                                               |
 | [isPending](#ispending-isfocused-isprivate)      | <code>false</code>        | Whether the event is pending or not                                                                                                                                                                                                                               |
 | [isFocused](#ispending-isfocused-isprivate)      | <code>false</code>        | Whether the event is focused or not                                                                                                                                                                                                                               |
 | [isReadOnly](#isreadonly)                        | <code>false</code>        | Whether the event is read-only or not                                                                                                                                                                                                                             |
 | [isPrivate](#ispending-isfocused-isprivate)      | <code>false</code>        | Whether the event is private or not                                                                                                                                                                                                                               |
+| [isPayable](#ispending-isfocused-ispayable)      | <code>false</code>        | Whether the event is payable or not                                                                                                                                                                                                                               |
 | [color](#style-related-properties)               | <code>'#000'</code>       | Text color for the event element                                                                                                                                                                                                                                  |
 | [backgroundColor](#style-related-properties)     | <code>'#a1b56c'</code>    | Background color for the event element                                                                                                                                                                                                                            |
 | [dragBackgroundColor](#style-related-properties) | <code>'#a1b56c'</code>    | Background color while dragging the event element                                                                                                                                                                                                                 |
@@ -216,14 +219,14 @@ Events will be rendered in the corresponding panel depending on their category. 
 
 Indicates whether the event can be modified. If `isReadOnly` is `true`, you cannot move or resize the event, and the edit button is not exposed in the event details popup.
 
-### isPending, isFocused, isPrivate
+### isPending, isFocused, isPrivate, isPayable
 
-`isPending` indicates whether an event is pending or not, `isFocused` indicates whether an event is focused or not, and `isPrivate` indicates whether an event is private or not. Basically, it does not affect the rendering, and if you want to display the event differently according to these values, you can use the [template](./template.md) functionality.
+`isPending` indicates whether an event is pending or not, `isFocused` indicates whether an event is focused or not, `isPrivate` indicates whether an event is private or not, and `isPayable` indicates whether an event is payable or not. Basically, it does not affect the rendering, and if you want to display the event differently according to these values, you can use the [template](./template.md) functionality.
 
 ```js
 const calendar = new Calendar('#container', {
   template: {
-    time({ title, isPending, isFocused, isPrivate }) {
+    time({ title, isPending, isFocused, isPrivate, isPayable }) {
       if (isPending) {
         return `Pending: ${title}`;
       }
@@ -234,6 +237,10 @@ const calendar = new Calendar('#container', {
 
       if (isPrivate) {
         return `Private: ${title}`;
+      }
+
+      if (isPayable) {
+        return `Payable: ${title}`;
       }
 
       return title;

@@ -15,6 +15,7 @@ export const BOOLEAN_KEYS_OF_EVENT_MODEL_DATA: BooleanKeyOfEventObject[] = [
   'isFocused',
   'isVisible',
   'isReadOnly',
+  'isPayable',
 ];
 
 export enum DetailPopupArrowDirection {

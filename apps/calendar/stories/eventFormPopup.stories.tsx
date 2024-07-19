@@ -31,6 +31,8 @@ function Wrapper({
   isAllday,
   isPrivate,
   isCreationPopup,
+  isPayable,
+  eventState,
 }: PropsWithChildren<EventFormPopupParam>) {
   const { showFormPopup } = useDispatch('popup');
   showFormPopup({
@@ -41,6 +43,8 @@ function Wrapper({
     end,
     isAllday,
     isPrivate,
+    isPayable,
+    eventState,
   });
 
   return <Fragment>{children}</Fragment>;
@@ -52,8 +56,9 @@ const Template: Story<EventFormPopupStoryProps> = ({
   location,
   start,
   end,
-  isAllday = false,
-  isPrivate = false,
+  isPayable,
+  isAllday = true,
+  isPrivate = false
 }) => (
   <ProviderWrapper options={{ calendars }}>
     <Wrapper
@@ -63,6 +68,7 @@ const Template: Story<EventFormPopupStoryProps> = ({
       end={end}
       isAllday={isAllday}
       isPrivate={isPrivate}
+      isPayable={isPayable}
       isCreationPopup={true}
     >
       <EventFormPopup />
@@ -75,6 +81,15 @@ EventFormPopupWithCalendars.args = {
   start: new TZDate(),
   end: new TZDate(),
   calendars: mockCalendars,
+  isPayable: false
+};
+
+export const EventFormPopupWithState = Template.bind({});
+EventFormPopupWithState.args = {
+  start: new TZDate('2024-07-06T08:00:00'),
+  end: new TZDate(),
+  calendars: mockCalendars,
+  isPayable: true
 };
 
 export const EventFormPopupWithoutCalendars = Template.bind({});

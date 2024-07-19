@@ -17,7 +17,7 @@ calendar.createEvents([
     location: 'Meeting Room A',
     attendees: ['A', 'B', 'C'],
     category: 'time',
-    state: 'Free',
+    state: 'Paid',
     isReadOnly: true,
     color: '#fff',
     backgroundColor: '#ccc',
@@ -53,7 +53,7 @@ interface EventObject {
   attendees?: string[];
   category?: 'milestone' | 'task' | 'allday' | 'time';
   recurrenceRule?: string;
-  state?: 'Busy' | 'Free';
+  state?: 'Unpaid' | 'Paid';
   isVisible?: boolean;
   isPending?: boolean;
   isFocused?: boolean;
@@ -84,7 +84,7 @@ interface EventObject {
 | [category](#category)                       | <code>'time'</code>       | 일정 카테고리. <code>milestone</code>, <code>task</code>, <code>allday</code>, <code>time</code> 중 하나이다.                                                                                                     |
 | dueDateClass                                | <code>''</code>           | task 일정 카테고리. 어떤 문자열도 가능하다.                                                                                                                                                                       |
 | recurrenceRule                              | <code>''</code>           | 일정 반복 규칙                                                                                                                                                                                                    |
-| state                                       | <code>'Busy'</code>       | 일정 상태. 바쁨(<code>Busy</code>), 한가함(<code>Free</code>) 중 하나이다.                                                                                                                                        |
+| state                                       | <code>'Unpaid'</code>       | 일정 상태. 바쁨(<code>Unpaid</code>), 한가함(<code>Paid</code>) 중 하나이다.                                                                                                                                        |
 | isVisible                                   | <code>true</code>         | 일정 표시 여부                                                                                                                                                                                                    |
 | [isPending](#ispending-isfocused-isprivate) | <code>false</code>        | 미정인 일정 여부                                                                                                                                                                                                  |
 | [isFocused](#ispending-isfocused-isprivate) | <code>false</code>        | 일정 강조 여부                                                                                                                                                                                                    |

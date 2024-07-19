@@ -9,6 +9,7 @@ Object {
     "enableDblClick": true,
   },
   "isReadOnly": false,
+  "isPayable": false,
   "month": Object {
     "dayNames": Array [
       "sun",
@@ -54,8 +55,8 @@ Object {
     "popupEdit": [Function],
     "popupIsAllday": [Function],
     "popupSave": [Function],
-    "popupStateBusy": [Function],
-    "popupStateFree": [Function],
+    "popupStateUnpaid": [Function],
+    "popupStatePaid": [Function],
     "popupUpdate": [Function],
     "startDatePlaceholder": [Function],
     "task": [Function],

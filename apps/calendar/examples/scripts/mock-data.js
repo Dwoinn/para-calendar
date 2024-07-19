@@ -105,7 +105,7 @@ function generateRandomEvent(calendar, renderStart, renderEnd) {
   var location = chance.address();
   var attendees = chance.bool({ likelihood: 70 }) ? generateNames() : [];
   var recurrenceRule = '';
-  var state = chance.bool({ likelihood: 50 }) ? 'Busy' : 'Free';
+  var state = chance.bool({ likelihood: 50 }) ? 'Unpaid' : 'Paid';
   var goingDuration = chance.bool({likelihood: 20}) ? chance.integer({ min: 30, max: 120 }) : 0;
   var comingDuration = chance.bool({likelihood: 20}) ? chance.integer({ min: 30, max: 120 }) : 0;
   var raw = {

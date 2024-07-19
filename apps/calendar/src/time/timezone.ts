@@ -1,5 +1,5 @@
-import type { TuiDateConstructor } from '@toast-ui/date';
-import { LocalDate } from '@toast-ui/date';
+import type { TuiDateConstructor } from '@para-calendar/date';
+import { LocalDate } from '@para-calendar/date';
 
 import TZDate from '@src/time/date';
 import { InvalidTimezoneNameError } from '@src/utils/error';

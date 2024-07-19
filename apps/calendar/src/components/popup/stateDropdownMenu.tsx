@@ -10,7 +10,7 @@ interface Props {
   setEventState: (eventState: EventState) => void;
 }
 
-const EVENT_STATES: EventState[] = ['Busy', 'Free'];
+const EVENT_STATES: EventState[] = ['Unpaid', 'Paid'];
 const classNames = {
   popupSectionItem: cls('popup-section-item', 'dropdown-menu-item'),
   dropdownMenu: cls('dropdown-menu'),
@@ -35,10 +35,10 @@ export function StateDropdownMenu({ setOpened, setEventState }: Props) {
         >
           <span className={classNames.icon} />
           <span className={classNames.content}>
-            {state === 'Busy' ? (
-              <Template template="popupStateBusy" />
+            {state === 'Unpaid' ? (
+              <Template template="popupStateUnpaid" />
             ) : (
-              <Template template="popupStateFree" />
+              <Template template="popupStatePaid" />
             )}
           </span>
         </li>

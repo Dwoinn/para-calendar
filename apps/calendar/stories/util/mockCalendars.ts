@@ -37,9 +37,20 @@ function initialize() {
     '#ffbb3b',
     '#ff4040',
   ];
+  const calendarIsPayable = [
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+  ];
 
   calendarNames.forEach((name, idx) => {
     const color = calendarColors[idx];
+    const isPayable = calendarIsPayable[idx];
     addCalendar({
       id: String(generateCalendarId()),
       name,
@@ -47,6 +58,7 @@ function initialize() {
       backgroundColor: color,
       borderColor: color,
       dragBackgroundColor: color,
+      isPayable
     });
   });
 }

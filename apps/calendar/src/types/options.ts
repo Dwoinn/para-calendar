@@ -68,6 +68,7 @@ export interface CalendarColor {
 export interface CalendarInfo extends CalendarColor {
   id: string;
   name: string;
+  isPayable?: boolean;
 }
 
 export type ViewType = 'month' | 'week' | 'day';
@@ -83,6 +84,7 @@ export interface Options {
   useDetailPopup?: boolean;
   gridSelection?: boolean | GridSelectionOptions;
   isReadOnly?: boolean;
+  isPayable?: boolean;
   usageStatistics?: boolean;
   eventFilter?: (event: EventObject) => boolean;
   timezone?: TimezoneOptions;

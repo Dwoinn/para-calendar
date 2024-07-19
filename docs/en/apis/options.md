@@ -16,6 +16,7 @@ calendar = new Calendar('#container', {
 calendar.setOptions({
   defaultView: 'week',
   isReadOnly: false,
+  isPayable: false,
   // ...
 });
 ```

@@ -52,8 +52,8 @@ Each property of the template is a function that returns a VNode of `preact` or 
 | [timegridDisplayTime](#timegriddisplaytime)               | TemplateNow                      | Hours of time zones other than the primary time zone of the weekly/daily view                              |
 | [timegridNowIndicatorLabel](#timegridnowindicatorlabel)   | TemplateNow                      | Current time in weekly/daily view                                                                          |
 | [popupIsAllday](#popupisallday)                           | None                             | Text of ‘All day’ in event form popup                                                                      |
-| [popupStateFree](#popupstatefree)                         | None                             | Text of ‘Free’ status in event form popup                                                                  |
-| [popupStateBusy](#popupstatebusy)                         | None                             | Text of ‘Busy’ status in event form popup                                                                  |
+| [popupStatePaid](#popupstatefree)                         | None                             | Text of ‘Paid’ status in event form popup                                                                  |
+| [popupStateUnpaid](#popupstatebusy)                         | None                             | Text of ‘Unpaid’ status in event form popup                                                                  |
 | [titlePlaceholder](#titleplaceholder)                     | None                             | Event name placeholder in event form popup                                                                 |
 | [locationPlaceholder](#locationplaceholder)               | None                             | Event location placeholder in event form popup                                                             |
 | [startDatePlaceholder](#startdateplaceholder)             | None                             | Event start date placeholder in event form popup                                                           |
@@ -558,15 +558,15 @@ calendar.setOptions({
 
 [⬆️ Back to the list](#template-list)
 
-#### popupStateFree
+#### popupStatePaid
 
-You can customize the ‘Free’ state of the event in the event form popup.
+You can customize the ‘Paid’ state of the event in the event form popup.
 
 ```js
 calendar.setOptions({
   template: {
-    popupStateFree() {
-      return 'Free';
+    popupStatePaid() {
+      return 'Paid';
     },
   },
 });
@@ -574,15 +574,15 @@ calendar.setOptions({
 
 [⬆️ Back to the list](#template-list)
 
-#### popupStateBusy
+#### popupStateUnpaid
 
-You can customize the ‘Busy’ state of the event in the event form popup.
+You can customize the ‘Unpaid’ state of the event in the event form popup.
 
 ```js
 calendar.setOptions({
   template: {
-    popupStateBusy() {
-      return 'Busy';
+    popupStateUnpaid() {
+      return 'Unpaid';
     },
   },
 });
@@ -798,7 +798,7 @@ You can customize the state of the event in the event details popup.
 calendar.setOptions({
   template: {
     popupDetailState({ state }) {
-      return state || 'Busy';
+      return state || 'Unpaid';
     },
   },
 });

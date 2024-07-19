@@ -80,6 +80,7 @@ function createRandomEvent(calendar: CalendarInfo, renderStart: TZDate, renderEn
   createTime(event, renderStart, renderEnd);
 
   event.isPrivate = chance.bool({ likelihood: 10 });
+  event.isPayable = chance.bool({ likelihood: 10 })
   event.location = chance.address();
   event.attendees = chance.bool({ likelihood: 70 }) ? createNames() : [];
   event.recurrenceRule = chance.bool({ likelihood: 20 }) ? 'repeated events' : '';

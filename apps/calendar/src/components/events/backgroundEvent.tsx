@@ -27,7 +27,7 @@ export function BackgroundEvent({
   left = '',
 }: Props) {
   const style = {
-    backgroundColor: uiModel.model.backgroundColor,
+    backgroundColor: uiModel.model.isPayable && uiModel.model.state === "Unpaid" ? uiModel.model.backgroundColor + "A0" : uiModel.model.backgroundColor,
     width,
     height,
     top,

@@ -5,7 +5,7 @@
 TZDate는 타임존을 처리하기 위해 만든 커스텀 날짜 클래스이다. 일정 생성 시 일정 시작 일시 또는 끝나는 일시를 TZDate로 지정할 수 있으며, 캘린더 API 중 일시와 관련된 값은 TZDate로 반환된다.
 
 ```js
-import Calendar, { TZDate } from '@toast-ui/calendar';
+import Calendar, { TZDate } from '@para-calendar/calendar';
 
 const calendar = new Calendar('#container');
 calendar.createEvents([
@@ -42,7 +42,7 @@ TZDate는 아래 파라미터로 생성할 수 있다.
 TZDate 인스턴스를 제외한 나머지 파라미터는 `Date()` 생성자 파라미터와 동일하므로, 자세한 내용은 [`Date()` 생성자 파라미터](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date#parameters)를 참고한다.
 
 ```js
-import { TZDate } from '@toast-ui/calendar';
+import { TZDate } from '@para-calendar/calendar';
 
 const now = new TZDate(); // 파라미터 없음
 const date = new TZDate(1654052400000); // UNIX 타임스탬프 값
