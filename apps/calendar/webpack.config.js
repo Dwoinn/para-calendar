@@ -35,7 +35,7 @@ module.exports = ({ minify, ie11 }) => {
   const shouldMinify = !!minify;
   const isIE11 = !!ie11;
 
-  const filenameBase = `toastui-calendar${isIE11 ? '.ie11' : ''}${shouldMinify ? '.min' : ''}`;
+  const filenameBase = `para-calendar${isIE11 ? '.ie11' : ''}${shouldMinify ? '.min' : ''}`;
 
   const plugins = [
     new webpack.BannerPlugin({

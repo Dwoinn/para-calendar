@@ -20,7 +20,7 @@ export default defineConfig(() => {
       lib: {
         entry: path.resolve(__dirname, 'src/index.ts'),
         formats: ['es'],
-        fileName: () => 'toastui-calendar.mjs',
+        fileName: () => 'para-calendar.mjs',
       },
       target: 'es2015',
       rollupOptions: {

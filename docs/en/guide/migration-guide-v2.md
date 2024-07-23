@@ -42,7 +42,7 @@ npm install @para-calendar/calendar # latest version
 npm install @para-calendar/calendar@<version> # specific version since 2.0
 ```
 
-Also, the filenames have been changed from `tui-calendar` to `toastui-calendar`.
+Also, the filenames have been changed from `tui-calendar` to `para-calendar`.
 
 ```js
 /* ES6 module in Node.js environment */
@@ -52,7 +52,7 @@ import "tui-calendar/dist/tui-calendar.min.css";
 
 // v2
 import Calendar from '@para-calendar/calendar';
-import '@para-calendar/calendar/dist/toastui-calendar.min.css';
+import '@para-calendar/calendar/dist/para-calendar.min.css';
 ```
 
 ```html
@@ -62,13 +62,13 @@ import '@para-calendar/calendar/dist/toastui-calendar.min.css';
 <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.min.js"></script>
 
 <!-- v2 -->
-<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
-<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/para-calendar.min.css" />
+<script src="https://uicdn.toast.com/calendar/latest/para-calendar.min.js"></script>
 ```
 
 ### Change the structure of CDN directories
 
-The directory structure and bundle file names of the CDN have been changed. In v1, the files named `tui-calendar` were in the `tui-calendar` folder like `https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js`. However, from v2, the files named `toastui-calendar` are in the `calendar` folder like `https://uicdn.toast.com/calendar/latest/toastui-calendar.js`.
+The directory structure and bundle file names of the CDN have been changed. In v1, the files named `tui-calendar` were in the `tui-calendar` folder like `https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js`. However, from v2, the files named `para-calendar` are in the `calendar` folder like `https://uicdn.toast.com/calendar/latest/para-calendar.js`.
 
 The CDN address used in v1 is maintained, but the files inside `/tui-calendar/latest/` are the latest version of v1, not the latest version of TOAST UI Calendar. If you need to use the latest version, you should use the files in the `/calendar/latest/`.
 
@@ -84,13 +84,13 @@ The CDN address used in v1 is maintained, but the files inside `/tui-calendar/la
   │  │  ├─ ...
   ├─ calendar/     # since v2
   │  ├─ latest     # the latest version
-  │  │  ├─ toastui-calendar.css
-  │  │  ├─ toastui-calendar.js
-  │  │  ├─ toastui-calendar.min.css
-  │  │  ├─ toastui-calendar.min.js
-  │  │  ├─ toastui-calendar.ie11.js
-  │  │  ├─ toastui-calendar.ie11.min.js
-  │  │  │  toastui-calendar.mjs
+  │  │  ├─ para-calendar.css
+  │  │  ├─ para-calendar.js
+  │  │  ├─ para-calendar.min.css
+  │  │  ├─ para-calendar.min.js
+  │  │  ├─ para-calendar.ie11.js
+  │  │  ├─ para-calendar.ie11.min.js
+  │  │  │  para-calendar.mjs
   │  ├─ v2.0.0/    # specific version since v2
   │  │  ├─ ...
 ```

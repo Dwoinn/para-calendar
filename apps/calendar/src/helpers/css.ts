@@ -4,7 +4,7 @@ import { isString } from '@src/utils/type';
 
 import type { CalendarColor } from '@t/options';
 
-export const CSS_PREFIX = 'toastui-calendar-';
+export const CSS_PREFIX = 'para-calendar-';
 
 interface ClassNameDictionary {
   [id: string]: boolean | undefined | null;

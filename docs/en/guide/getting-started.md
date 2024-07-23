@@ -45,14 +45,14 @@ TOAST UI Calendar is available through CDN.
 - You can get the calendar through the CDN with the code below.
 
 ```html
-<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
-<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/para-calendar.min.css" />
+<script src="https://uicdn.toast.com/calendar/latest/para-calendar.min.js"></script>
 
 <!-- To get bundle file for legacy browser -->
-<!-- <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script> -->
+<!-- <script src="https://uicdn.toast.com/calendar/latest/para-calendar.ie11.min.js"></script> -->
 
 <!-- Import as es module -->
-<!-- <script type="module" src="https://uicdn.toast.com/calendar/latest/toastui-calendar.mjs"></script> -->
+<!-- <script type="module" src="https://uicdn.toast.com/calendar/latest/para-calendar.mjs"></script> -->
 ```
 
 - CDN consists of the following directory structure.
@@ -61,13 +61,13 @@ TOAST UI Calendar is available through CDN.
 - uicdn.toast.com/
   ├─ calendar/
   │  ├─ latest
-  │  │  ├─ toastui-calendar.css
-  │  │  ├─ toastui-calendar.js
-  │  │  ├─ toastui-calendar.min.css
-  │  │  ├─ toastui-calendar.min.js
-  │  │  ├─ toastui-calendar.ie11.js
-  │  │  ├─ toastui-calendar.ie11.min.js
-  │  │  │  toastui-calendar.mjs
+  │  │  ├─ para-calendar.css
+  │  │  ├─ para-calendar.js
+  │  │  ├─ para-calendar.min.css
+  │  │  ├─ para-calendar.min.js
+  │  │  ├─ para-calendar.ie11.js
+  │  │  ├─ para-calendar.ie11.min.js
+  │  │  │  para-calendar.mjs
   │  ├─ v2.0.0/
 ```
 
@@ -124,7 +124,7 @@ const Calendar = require('@para-calendar/calendar/ie11');
 
 ```html
 <!-- with CDN and browser environment namespace -->
-<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
+<script src="https://uicdn.toast.com/calendar/latest/para-calendar.ie11.min.js"></script>
 <script>
   const Calendar = tui.Calendar;
 </script>
@@ -136,17 +136,17 @@ To use the calendar, you need to add a CSS file. You can import the CSS file thr
 
 ```js
 /* ES6 module in Node.js environment */
-import '@para-calendar/calendar/dist/toastui-calendar.min.css'; // Stylesheet for calendar
+import '@para-calendar/calendar/dist/para-calendar.min.css'; // Stylesheet for calendar
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-require('@para-calendar/calendar/dist/toastui-calendar.min.css');
+require('@para-calendar/calendar/dist/para-calendar.min.css');
 ```
 
 ```html
 <!-- CDN -->
-<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/para-calendar.min.css" />
 ```
 
 ### Creating an instance

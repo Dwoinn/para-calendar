@@ -42,7 +42,7 @@ npm install @para-calendar/calendar # 최신 버전
 npm install @para-calendar/calendar@<version> # 2.0 이후 특정 버전
 ```
 
-파일명 또한 `tui-calendar`에서 `toastui-calendar`로 변경되었다.
+파일명 또한 `tui-calendar`에서 `para-calendar`로 변경되었다.
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
@@ -52,7 +52,7 @@ import "tui-calendar/dist/tui-calendar.min.css";
 
 // v2
 import Calendar from '@para-calendar/calendar';
-import '@para-calendar/calendar/dist/toastui-calendar.min.css';
+import '@para-calendar/calendar/dist/para-calendar.min.css';
 ```
 
 ```html
@@ -62,13 +62,13 @@ import '@para-calendar/calendar/dist/toastui-calendar.min.css';
 <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.min.js"></script>
 
 <!-- v2 -->
-<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
-<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/para-calendar.min.css" />
+<script src="https://uicdn.toast.com/calendar/latest/para-calendar.min.js"></script>
 ```
 
 ### CDN 디렉토리 구조 변경
 
-CDN의 디렉토리 구조와 번들 파일 이름이 변경되었다. v1에서는 `https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js`와 같이 `tui-calendar` 라는 폴더 내에 `tui-calendar`라는 파일이 존재했다. 하지만 v2에서는 `https://uicdn.toast.com/calendar/latest/toastui-calendar.js`처럼 `calendar` 폴더 내에 `toastui-calendar`라는 파일이 존재한다.
+CDN의 디렉토리 구조와 번들 파일 이름이 변경되었다. v1에서는 `https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js`와 같이 `tui-calendar` 라는 폴더 내에 `tui-calendar`라는 파일이 존재했다. 하지만 v2에서는 `https://uicdn.toast.com/calendar/latest/para-calendar.js`처럼 `calendar` 폴더 내에 `para-calendar`라는 파일이 존재한다.
 
 v1에서 사용하던 CDN 주소는 유지되지만, `/tui-calendar/latest/` 내부 파일은 TOAST UI Calendar의 최신버전이 아니라 v1의 최신 버전이다. 최신 버전을 사용하고 싶다면 `/calendar/latest/` 내부 파일을 사용해야 한다.
 
@@ -84,13 +84,13 @@ v1에서 사용하던 CDN 주소는 유지되지만, `/tui-calendar/latest/` 내
   │  │  ├─ ...
   ├─ calendar/     # v2 이상
   │  ├─ latest     # 최신 버전
-  │  │  ├─ toastui-calendar.css
-  │  │  ├─ toastui-calendar.js
-  │  │  ├─ toastui-calendar.min.css
-  │  │  ├─ toastui-calendar.min.js
-  │  │  ├─ toastui-calendar.ie11.js
-  │  │  ├─ toastui-calendar.ie11.min.js
-  │  │  │  toastui-calendar.mjs
+  │  │  ├─ para-calendar.css
+  │  │  ├─ para-calendar.js
+  │  │  ├─ para-calendar.min.css
+  │  │  ├─ para-calendar.min.js
+  │  │  ├─ para-calendar.ie11.js
+  │  │  ├─ para-calendar.ie11.min.js
+  │  │  │  para-calendar.mjs
   │  ├─ v2.0.0/    # v2 이상 특정 버전
   │  │  ├─ ...
 ```

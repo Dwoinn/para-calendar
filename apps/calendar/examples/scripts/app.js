@@ -3,7 +3,7 @@
 (function (Calendar) {
   var cal;
   // Constants
-  var CALENDAR_CSS_PREFIX = 'toastui-calendar-';
+  var CALENDAR_CSS_PREFIX = 'para-calendar-';
   var cls = function (className) {
     return CALENDAR_CSS_PREFIX + className;
   };

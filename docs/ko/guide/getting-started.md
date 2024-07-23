@@ -46,14 +46,14 @@ TOAST UI Calendar는 CDN을 통해 사용할 수 있다.
 - 아래의 코드로 CDN을 사용할 수 있다.
 
 ```html
-<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
-<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/para-calendar.min.css" />
+<script src="https://uicdn.toast.com/calendar/latest/para-calendar.min.js"></script>
 
 <!-- 레거시 브라우저용 번들 파일 가져오기 -->
-<!-- <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script> -->
+<!-- <script src="https://uicdn.toast.com/calendar/latest/para-calendar.ie11.min.js"></script> -->
 
 <!-- 모듈로 가져오기 -->
-<!-- <script type="module" src="https://uicdn.toast.com/calendar/latest/toastui-calendar.mjs"></script> -->
+<!-- <script type="module" src="https://uicdn.toast.com/calendar/latest/para-calendar.mjs"></script> -->
 ```
 
 - CDN은 아래의 디렉토리 구조로 구성되어 있다.
@@ -62,13 +62,13 @@ TOAST UI Calendar는 CDN을 통해 사용할 수 있다.
 - uicdn.toast.com/
   ├─ calendar/
   │  ├─ latest
-  │  │  ├─ toastui-calendar.css
-  │  │  ├─ toastui-calendar.js
-  │  │  ├─ toastui-calendar.min.css
-  │  │  ├─ toastui-calendar.min.js
-  │  │  ├─ toastui-calendar.ie11.js
-  │  │  ├─ toastui-calendar.ie11.min.js
-  │  │  │  toastui-calendar.mjs
+  │  │  ├─ para-calendar.css
+  │  │  ├─ para-calendar.js
+  │  │  ├─ para-calendar.min.css
+  │  │  ├─ para-calendar.min.js
+  │  │  ├─ para-calendar.ie11.js
+  │  │  ├─ para-calendar.ie11.min.js
+  │  │  │  para-calendar.mjs
   │  ├─ v2.0.0/
 ```
 
@@ -125,7 +125,7 @@ const Calendar = require('@para-calendar/calendar/ie11');
 
 ```html
 <!-- CDN과 브라우저 환경에서 namespace -->
-<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
+<script src="https://uicdn.toast.com/calendar/latest/para-calendar.ie11.min.js"></script>
 <script>
   const Calendar = tui.Calendar;
 </script>
@@ -137,17 +137,17 @@ Calendar를 사용하기 위해서는 CSS 파일을 추가해야 한다. import,
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
-import '@para-calendar/calendar/dist/toastui-calendar.min.css'; // Calendar 스타일
+import '@para-calendar/calendar/dist/para-calendar.min.css'; // Calendar 스타일
 ```
 
 ```js
 /* Node.js 환경에서 CommonJS */
-require('@para-calendar/calendar/dist/toastui-calendar.min.css');
+require('@para-calendar/calendar/dist/para-calendar.min.css');
 ```
 
 ```html
 <!-- CDN -->
-<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/para-calendar.min.css" />
 ```
 
 ### 인스턴스 만들기

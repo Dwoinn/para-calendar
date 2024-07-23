@@ -55,14 +55,14 @@ npm install --save @para-calendar/calendar
 TOAST UI products are available over the CDN powered by [NHN Cloud](https://www.toast.com).
 
 ```html
-<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
-<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/para-calendar.min.css" />
+<script src="https://uicdn.toast.com/calendar/latest/para-calendar.min.js"></script>
 
 <!-- To get bundle file for legacy browser -->
-<!-- <script src="https://uicdn.toast.com/calendar /latest/toastui-calendar.ie11.min.js"></script> -->
+<!-- <script src="https://uicdn.toast.com/calendar /latest/para-calendar.ie11.min.js"></script> -->
 
 <!-- Import as es module -->
-<!-- <script type="module" src="https:// uicdn.toast.com/calendar/latest/toastui-calendar.mjs"></script> -->
+<!-- <script type="module" src="https:// uicdn.toast.com/calendar/latest/para-calendar.mjs"></script> -->
 ```
 
 If you want to use a specific version, use the tag name instead of `latest` in the url's path.
@@ -73,13 +73,13 @@ The CDN directory has the following structure.
 - uicdn.toast.com/
   ├─ calendar/
   │  ├─ latest
-  │  │  ├─ toastui-calendar.css
-  │  │  ├─ toastui-calendar.js
-  │  │  ├─ toastui-calendar.min.css
-  │  │  ├─ toastui-calendar.min.js
-  │  │  ├─ toastui-calendar.ie11.js
-  │  │  ├─ toastui-calendar.ie11.min.js
-  │  │  │  toastui-calendar.mjs
+  │  │  ├─ para-calendar.css
+  │  │  ├─ para-calendar.js
+  │  │  ├─ para-calendar.min.css
+  │  │  ├─ para-calendar.min.js
+  │  │  ├─ para-calendar.ie11.js
+  │  │  ├─ para-calendar.ie11.min.js
+  │  │  │  para-calendar.mjs
   │  ├─ v2.0.0/
 ```
 
@@ -96,13 +96,13 @@ TOAST UI Calendar can be instantiated through the constructor function. There ar
 ```js
 /* ES6 module in Node.js environment */
 import Calendar from '@para-calendar/calendar';
-import '@para-calendar/calendar/dist/toastui-calendar.min.css';
+import '@para-calendar/calendar/dist/para-calendar.min.css';
 ```
 
 ```js
 /* CommonJS in Node.js environment */
 const Calendar = require('@para-calendar/calendar');
-require('@para-calendar/calendar/dist/toastui-calendar.min.css');
+require('@para-calendar/calendar/dist/para-calendar.min.css');
 ```
 
 ```js

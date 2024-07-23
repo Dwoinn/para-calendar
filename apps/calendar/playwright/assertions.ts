@@ -60,9 +60,9 @@ export async function assertAccumulatedDayGridSelectionMatching(
   nthSelection: number,
   isAcrossWeeks: boolean
 ) {
-  const cellClassName = '.toastui-calendar-daygrid-cell';
+  const cellClassName = '.para-calendar-daygrid-cell';
   const selectionClassName =
-    '.toastui-calendar-accumulated-grid-selection .toastui-calendar-grid-selection';
+    '.para-calendar-accumulated-grid-selection .para-calendar-grid-selection';
 
   const startCellLocator = page.locator(cellClassName).nth(startIdx);
   const endCellLocator = page.locator(cellClassName).nth(endIdx);

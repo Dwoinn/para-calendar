@@ -95,7 +95,7 @@ export function createStoreContext<State extends StateWithActions>() {
         } catch (e: unknown) {
           // This will be rarely happened, unless we don't pass the arguments to actions properly.
           // eslint-disable-next-line no-console
-          console.error('[toastui-calendar] failed to update state', (e as Error)?.message);
+          console.error('[para-calendar] failed to update state', (e as Error)?.message);
           hasErrorRef.current = true;
           notify();
         }

@@ -7,7 +7,7 @@ import type { FormattedTimeString } from '../src/types/time/datetime';
 import type { BoundingBox } from './types';
 
 export function getPrefixedClassName(className: string) {
-  return `.toastui-calendar-${className}`;
+  return `.para-calendar-${className}`;
 }
 
 export async function dragAndDrop({
@@ -54,7 +54,7 @@ export async function selectGridCells(
 }
 
 export function selectMonthGridCells(page: Page, startCellIndex: number, endCellIndex: number) {
-  return selectGridCells(page, startCellIndex, endCellIndex, '.toastui-calendar-daygrid-cell');
+  return selectGridCells(page, startCellIndex, endCellIndex, '.para-calendar-daygrid-cell');
 }
 
 export async function getBoundingBox(locator: Locator): Promise<BoundingBox> {
@@ -84,7 +84,7 @@ export function getTimeGridLineSelector(start: FormattedTimeString): string {
 }
 
 export function getCellSelector(cellIndex: number): string {
-  return `.toastui-calendar-daygrid-cell >> nth=${cellIndex}`;
+  return `.para-calendar-daygrid-cell >> nth=${cellIndex}`;
 }
 
 export function getTimeStrFromDate(d: TZDate) {
