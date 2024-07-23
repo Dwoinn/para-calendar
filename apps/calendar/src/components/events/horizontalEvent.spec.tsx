@@ -243,7 +243,7 @@ describe('Color values', () => {
     expect(container.children[0]).toHaveStyle({
       color: calendarColors.color,
       backgroundColor: calendarColors.backgroundColor,
-      borderLeft: `3px solid ${calendarColors.borderColor}`,
+      borderLeft: `8px solid ${calendarColors.borderColor}`,
     });
   });
 
@@ -280,7 +280,7 @@ describe('Color values', () => {
     expect(container.children[0]).toHaveStyle({
       color: eventColors.color,
       backgroundColor: eventColors.backgroundColor,
-      borderLeft: `3px solid ${eventColors.borderColor}`,
+      borderLeft: `8px solid ${eventColors.borderColor}`,
     });
   });
 
@@ -326,7 +326,7 @@ describe('Color values', () => {
     expect(getEventItemElement()).toHaveStyle({
       color: eventColors.color,
       backgroundColor: eventColors.dragBackgroundColor,
-      borderLeft: `3px solid ${eventColors.borderColor}`,
+      borderLeft: `8px solid ${eventColors.borderColor}`,
     });
   });
 });

@@ -62,7 +62,7 @@ function getEventItemStyle({
   const defaultItemStyle = {
     color,
     backgroundColor: isDraggingTarget ? dragBackgroundColor : backgroundColor,
-    borderLeft: exceedLeft ? 'none' : `3px solid ${borderColor}`,
+    borderLeft: exceedLeft ? 'none' : `8px solid ${borderColor}`,
     borderRadius: getBorderRadius(exceedLeft, exceedRight),
     overflow: 'hidden',
     height: eventHeight,

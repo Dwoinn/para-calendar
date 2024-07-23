@@ -96,7 +96,7 @@ function getStyles({
     top: toPercent(top),
     left: duplicateLeft || toPercent(left),
     borderRadius,
-    borderLeft: `3px solid ${borderColor}`,
+    borderLeft: `8px solid ${borderColor}`,
     marginLeft,
     color,
     backgroundColor: isDraggingTarget ? dragBackgroundColor : backgroundColor,

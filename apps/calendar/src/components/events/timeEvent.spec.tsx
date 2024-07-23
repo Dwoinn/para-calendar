@@ -191,7 +191,7 @@ describe('Color values', () => {
     const container = screen.getByTestId(/time-event/);
     expect(container).toHaveStyle({
       color: calendarColors.color,
-      borderColor: `3px solid ${calendarColors.borderColor}`,
+      borderColor: `8px solid ${calendarColors.borderColor}`,
       backgroundColor: calendarColors.backgroundColor,
     });
   });
@@ -221,7 +221,7 @@ describe('Color values', () => {
     const container = screen.getByTestId(/time-event/);
     expect(container).toHaveStyle({
       color: eventColors.color,
-      borderColor: `3px solid ${eventColors.borderColor}`,
+      borderColor: `8px solid ${eventColors.borderColor}`,
       backgroundColor: eventColors.backgroundColor,
     });
   });
