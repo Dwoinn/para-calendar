@@ -1,4 +1,4 @@
-import '@para-calendar/calendar/toastui-calendar.css';
+import '@dwoinn/para-calendar/toastui-calendar.css';
 import 'tui-date-picker/dist/tui-date-picker.min.css';
 import 'tui-time-picker/dist/tui-time-picker.min.css';
 

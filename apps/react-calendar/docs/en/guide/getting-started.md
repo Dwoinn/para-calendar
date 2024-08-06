@@ -32,8 +32,8 @@ TOAST UI products are registered in the [npm](https://www.npmjs.com/) package re
 #### npm
 
 ```sh
-npm install @para-calendar/react-calendar # latest version
-npm install @para-calendar/react-calendar@<version> # specific version
+npm install @dwoinn/para-react-calendar # latest version
+npm install @dwoinn/para-react-calendar@<version> # specific version
 ```
 
 ## How to use the calendar
@@ -46,12 +46,12 @@ There are three ways to import TOAST UI Calendar for React depending on the envi
 
 ```js
 /* ES6 module in Node.js environment */
-import Calendar from '@para-calendar/react-calendar';
+import Calendar from '@dwoinn/para-react-calendar';
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-const Calendar = require('@para-calendar/react-calendar');
+const Calendar = require('@dwoinn/para-react-calendar');
 ```
 
 ```js
@@ -67,12 +67,12 @@ Since the bundle size of IE11 is about 2x larger than that of the default bundle
 
 ```js
 /* ES6 module in Node.js environment */
-import Calendar from '@para-calendar/react-calendar/ie11';
+import Calendar from '@dwoinn/para-react-calendar/ie11';
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-const Calendar = require('@para-calendar/react-calendar/ie11');
+const Calendar = require('@dwoinn/para-react-calendar/ie11');
 ```
 
 ### CSS
@@ -81,12 +81,12 @@ To use the calendar, you need to add a CSS file of TOAST UI Calendar. You can im
 
 ```js
 /* ES6 module in Node.js environment */
-import '@para-calendar/calendar/dist/toastui-calendar.min.css'; // Stylesheet for calendar
+import '@dwoinn/para-calendar/dist/toastui-calendar.min.css'; // Stylesheet for calendar
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-require('@para-calendar/calendar/dist/toastui-calendar.min.css');
+require('@dwoinn/para-calendar/dist/toastui-calendar.min.css');
 ```
 
 ```html
@@ -99,8 +99,8 @@ require('@para-calendar/calendar/dist/toastui-calendar.min.css');
 You can load a calendar component and add it to your component.
 
 ```jsx
-import Calendar from '@para-calendar/react-calendar';
-import '@para-calendar/calendar/dist/toastui-calendar.min.css';
+import Calendar from '@dwoinn/para-react-calendar';
+import '@dwoinn/para-calendar/dist/toastui-calendar.min.css';
 
 export function YourComponent() {
   return (

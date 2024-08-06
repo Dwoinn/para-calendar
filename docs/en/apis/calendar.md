@@ -7,7 +7,7 @@ You can use the `Calendar` class to create a calendar instance. You need to spec
 Add a container element where TOAST UI Calendar will be created. **This element must have an appropriate height. (600px or higher is recommended)**
 
 ```js
-import { Calendar } from '@para-calendar/calendar';
+import { Calendar } from '@dwoinn/para-calendar';
 
 // Passing elements directly
 const container = document.querySelector('#container');

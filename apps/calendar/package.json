@@ -1,5 +1,5 @@
 {
-  "name": "@para-calendar/calendar",
+  "name": "@dwoinn/para-calendar",
   "author": "Donovan Winter <winter.donovan90@gmail.com>",
   "version": "2.1.3",
   "main": "./dist/para-calendar.js",
@@ -27,16 +27,12 @@
     }
   },
   "license": "MIT",
-  "description": "TOAST UI Calendar",
+  "description": "Para Calendar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.calendar.git"
+    "url": "https://github.com/Dwoinn/para-calendar.git"
   },
   "keywords": [
-    "nhn",
-    "toast",
-    "toastui",
-    "toast-ui",
     "calendar",
     "fullcalendar",
     "daily",

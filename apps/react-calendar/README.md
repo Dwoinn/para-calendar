@@ -3,7 +3,7 @@
 > This is a React component wrapping [TOAST UI Calendar](/apps/calendar).
 
 [![React](https://img.shields.io/badge/react-61dafb.svg)](https://reactjs.org/)
-[![npm version](https://img.shields.io/npm/v/@para-calendar/react-calendar.svg)](https://www.npmjs.com/package/@para-calendar/react-calendar)
+[![npm version](https://img.shields.io/npm/v/@dwoinn/para-react-calendar.svg)](https://www.npmjs.com/package/@dwoinn/para-react-calendar)
 [![license](https://img.shields.io/github/license/nhn/tui.calendar.svg)](https://github.com/nhn/tui.calendar/blob/master/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/tui.calendar/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with hearth by NHN Cloud](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-NHN_Cloud-ff1414.svg)](https://github.com/nhn)
@@ -49,7 +49,7 @@ export function MyCalendar() {
 ### npm
 
 ```sh
-npm install --save @para-calendar/react-calendar
+npm install --save @dwoinn/para-react-calendar
 ```
 
 ## 📅 Usage
@@ -60,14 +60,14 @@ You can use Toast UI Calendar for React as moudule format or namespace.
 
 ```js
 /* ES6 module in Node.js environment */
-import Calendar from '@para-calendar/react-calendar';
-import '@para-calendar/calendar/dist/toastui-calendar.min.css';
+import Calendar from '@dwoinn/para-react-calendar';
+import '@dwoinn/para-calendar/dist/toastui-calendar.min.css';
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-const Calendar = require('@para-calendar/react-calendar');
-require('@para-calendar/calendar/dist/toastui-calendar.min.css');
+const Calendar = require('@dwoinn/para-react-calendar');
+require('@dwoinn/para-calendar/dist/toastui-calendar.min.css');
 ```
 
 ```js

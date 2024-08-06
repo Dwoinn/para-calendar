@@ -30,7 +30,7 @@
 #           registry-url: https://registry.npmjs.org/
 #       - name: Install tuidoc
 #         run: |
-#           npm install -g @para-calendar/doc
+#           npm install -g @DwoinN/para-calendar/doc
 #         shell: bash
 #       - name: Build docs
 #         working-directory: ${{ env.WORKING_DIRECTORY }}

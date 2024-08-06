@@ -7,7 +7,7 @@
 캘린더 인스턴스 생성 시 첫 번째 인자로 캘린더 인스턴스가 마운트 될 요소를 설정한다. **이 요소는 적절한 높이의 `height` 값을 가지고 있어야 한다. (최소 600px 이상 권장)**
 
 ```js
-import { Calendar } from '@para-calendar/calendar';
+import { Calendar } from '@dwoinn/para-calendar';
 
 // 요소를 직접 전달하는 경우
 const container = document.querySelector('#container');

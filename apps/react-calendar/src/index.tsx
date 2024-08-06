@@ -1,5 +1,5 @@
-import type { EventObject, ExternalEventTypes, Options } from '@para-calendar/calendar';
-import ToastUICalendar from '@para-calendar/calendar';
+import type { EventObject, ExternalEventTypes, Options } from '@dwoinn/para-calendar';
+import ToastUICalendar from '@dwoinn/para-calendar';
 import React from 'react';
 
 import { isEqual } from './isEqual';

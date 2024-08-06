@@ -1,4 +1,4 @@
-import type { Options } from '@para-calendar/calendar';
+import type { Options } from '@dwoinn/para-calendar';
 
 export const theme: Options['theme'] = {
   common: {

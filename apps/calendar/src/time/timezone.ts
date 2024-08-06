@@ -1,5 +1,5 @@
-import type { TuiDateConstructor } from '@para-calendar/date';
-import { LocalDate } from '@para-calendar/date';
+import type { TuiDateConstructor } from '@dwoinn/para-date';
+import { LocalDate } from '@dwoinn/para-date';
 
 import TZDate from '@src/time/date';
 import { InvalidTimezoneNameError } from '@src/utils/error';

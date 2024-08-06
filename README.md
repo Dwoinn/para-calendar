@@ -2,7 +2,7 @@
 
 > 🍞📅 A JavaScript calendar that is full featured. Now your service just got the customizable calendar.
 
-[![npm](https://img.shields.io/npm/v/@para-calendar/calendar.svg)](https://www.npmjs.com/package/@para-calendar/calendar)
+[![npm](https://img.shields.io/npm/v/@dwoinn/para-calendar.svg)](https://www.npmjs.com/package/@dwoinn/para-calendar)
 [![GitHub license](https://img.shields.io/github/license/nhn/tui.calendar.svg)](https://github.com/nhn/tui.calendar/blob/main/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/tui.calendar/labels/help%20wanted)
 [![code with hearth by NHN Cloud](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-NHN_Cloud-ff1414.svg)](https://github.com/nhn)
@@ -28,9 +28,9 @@
 
 The functionality of TOAST UI Calendar is available when using the Plain JavaScript, React, Vue Component.
 
-- [@para-calendar/calendar](/apps/calendar) - Plain JavaScript component implemented by [NHN Cloud](https://github.com/nhn).
-- [@para-calendar/react-calendar](/apps/react-calendar) - React wrapper component implemented by [NHN Cloud](https://github.com/nhn).
-- [@para-calendar/vue-calendar](/apps/vue-calendar) - Vue wrapper component implemented by [NHN Cloud](https://github.com/nhn).
+- [@dwoinn/para-calendar](/apps/calendar) - Plain JavaScript component implemented by [NHN Cloud](https://github.com/nhn).
+- [@dwoinn/para-react-calendar](/apps/react-calendar) - React wrapper component implemented by [NHN Cloud](https://github.com/nhn).
+- [@dwoinn/para-vue-calendar](/apps/vue-calendar) - Vue wrapper component implemented by [NHN Cloud](https://github.com/nhn).
 
 ## 📙 Documents
 

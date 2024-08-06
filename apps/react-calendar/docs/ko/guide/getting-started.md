@@ -33,8 +33,8 @@ TOAST UI 제품들은 [npm](https://www.npmjs.com/) 패키지 매니저에 등�
 #### npm
 
 ```sh
-npm install @para-calendar/react-calendar # 최신 버전
-npm install @para-calendar/react-calendar@<version> # 특정 버전
+npm install @dwoinn/para-react-calendar # 최신 버전
+npm install @dwoinn/para-react-calendar@<version> # 특정 버전
 ```
 
 ## 사용하기
@@ -47,12 +47,12 @@ TOAST UI 캘린더 React Wrapper는 아래 세 가지 방법으로 불러올 수
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
-import Calendar from '@para-calendar/react-calendar';
+import Calendar from '@dwoinn/para-react-calendar';
 ```
 
 ```js
 /* Node.js 환경에서 CommonJS */
-const Calendar = require('@para-calendar/react-calendar');
+const Calendar = require('@dwoinn/para-react-calendar');
 ```
 
 ```js
@@ -68,12 +68,12 @@ IE11의 번들 크기는 기본 번들보다 2배 가량 크기 때문에 반드
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
-import Calendar from '@para-calendar/react-calendar/ie11';
+import Calendar from '@dwoinn/para-react-calendar/ie11';
 ```
 
 ```js
 /* Node.js 환경에서 CommonJS */
-const Calendar = require('@para-calendar/react-calendar/ie11');
+const Calendar = require('@dwoinn/para-react-calendar/ie11');
 ```
 
 ### CSS
@@ -82,12 +82,12 @@ Calendar를 사용하기 위해서는 TOAST UI 캘린더의 CSS 파일을 추가
 
 ```js
 /* Node.js 환경에서 ES6 모듈 */
-import '@para-calendar/calendar/dist/toastui-calendar.min.css'; // Calendar 스타일
+import '@dwoinn/para-calendar/dist/toastui-calendar.min.css'; // Calendar 스타일
 ```
 
 ```js
 /* Node.js 환경에서 CommonJS */
-require('@para-calendar/calendar/dist/toastui-calendar.min.css');
+require('@dwoinn/para-calendar/dist/toastui-calendar.min.css');
 ```
 
 ```html
@@ -100,8 +100,8 @@ require('@para-calendar/calendar/dist/toastui-calendar.min.css');
 컴포넌트에서 TOAST UI 캘린더 React Wrapper를 불러와서 사용할 수 있다.
 
 ```jsx
-import Calendar from '@para-calendar/react-calendar';
-import '@para-calendar/calendar/dist/toastui-calendar.min.css';
+import Calendar from '@dwoinn/para-react-calendar';
+import '@dwoinn/para-calendar/dist/toastui-calendar.min.css';
 
 export function YourComponent() {
   return (

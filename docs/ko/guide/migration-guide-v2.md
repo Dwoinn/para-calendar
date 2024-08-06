@@ -31,15 +31,15 @@
 
 ### 패키지 및 파일 이름 변경
 
-패키지명이 `tui-calendar`에서 `@para-calendar/calendar`로 변경되었다.
+패키지명이 `tui-calendar`에서 `@dwoinn/para-calendar`로 변경되었다.
 
 ```sh
 # v1
 npm install tui-calendar@<version> # 1.x 특정 버전
 
 # v2
-npm install @para-calendar/calendar # 최신 버전
-npm install @para-calendar/calendar@<version> # 2.0 이후 특정 버전
+npm install @dwoinn/para-calendar # 최신 버전
+npm install @dwoinn/para-calendar@<version> # 2.0 이후 특정 버전
 ```
 
 파일명 또한 `tui-calendar`에서 `para-calendar`로 변경되었다.
@@ -51,8 +51,8 @@ import Calendar from 'tui-calendar';
 import "tui-calendar/dist/tui-calendar.min.css";
 
 // v2
-import Calendar from '@para-calendar/calendar';
-import '@para-calendar/calendar/dist/para-calendar.min.css';
+import Calendar from '@dwoinn/para-calendar';
+import '@dwoinn/para-calendar/dist/para-calendar.min.css';
 ```
 
 ```html
@@ -103,7 +103,7 @@ v2부터 지원하는 브라우저 범위가 *인터넷 익스플로러 11 이�
 IE 11의 번들 크기는 기본 번들보다 30% 가량 크기 때문에 반드시 지원 범위를 잘 고려하여 불필요하게 번들 크기를 늘리지 않도록 유의해야 한다.
 
 ```ts
-import Calendar from '@para-calendar/calendar/ie11';
+import Calendar from '@dwoinn/para-calendar/ie11';
 ```
 
 ## API 마이그레이션

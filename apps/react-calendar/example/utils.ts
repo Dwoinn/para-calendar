@@ -1,4 +1,4 @@
-import { TZDate } from '@para-calendar/calendar';
+import { TZDate } from '@dwoinn/para-calendar';
 
 export function clone(date: TZDate): TZDate {
   return new TZDate(date);

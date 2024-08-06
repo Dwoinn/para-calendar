@@ -1,4 +1,4 @@
-import type { DateInterface } from '@para-calendar/date';
+import type { DateInterface } from '@dwoinn/para-date';
 
 import { MS_PER_MINUTES } from '@src/time/datetime';
 import {

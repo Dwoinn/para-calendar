@@ -59,7 +59,7 @@ export default defineConfig(({ command, mode }) => {
     Object.assign(buildConfig, {
       resolve: {
         alias: {
-          '@para-calendar/calendar': '@para-calendar/calendar/ie11',
+          '@dwoinn/para-calendar': '@dwoinn/para-calendar/ie11',
         },
       },
     });

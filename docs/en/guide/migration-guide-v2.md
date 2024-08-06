@@ -31,15 +31,15 @@ TOAST UI Calendar v2.0, which uses [preact](https://preactjs.com/) to render cal
 
 ### Rename package and files
 
-The package name has been changed from `tui-calendar` to `@para-calendar/calendar`.
+The package name has been changed from `tui-calendar` to `@dwoinn/para-calendar`.
 
 ```sh
 # v1
 npm install tui-calendar@<version> # 1.x legacy version
 
 # v2
-npm install @para-calendar/calendar # latest version
-npm install @para-calendar/calendar@<version> # specific version since 2.0
+npm install @dwoinn/para-calendar # latest version
+npm install @dwoinn/para-calendar@<version> # specific version since 2.0
 ```
 
 Also, the filenames have been changed from `tui-calendar` to `para-calendar`.
@@ -51,8 +51,8 @@ import Calendar from 'tui-calendar';
 import "tui-calendar/dist/tui-calendar.min.css";
 
 // v2
-import Calendar from '@para-calendar/calendar';
-import '@para-calendar/calendar/dist/para-calendar.min.css';
+import Calendar from '@dwoinn/para-calendar';
+import '@dwoinn/para-calendar/dist/para-calendar.min.css';
 ```
 
 ```html
@@ -102,7 +102,7 @@ From v2, the supported browser range is changed to *Internet Explorer 11 or* lat
 The default bundle provides stable support for the latest two versions of the modern browsers. However, the default bundle does not include a polyfill for IE 11, so to support IE 11 or a legacy browser below a certain level, you need to add the IE 11 bundle that includes a polyfill as follows. Since the bundle size of IE 11 is about 30% larger than that of the default bundle, you must take care not to increase the bundle size unnecessarily by considering the range of support.
 
 ```ts
-import Calendar from '@para-calendar/calendar/ie11';
+import Calendar from '@dwoinn/para-calendar/ie11';
 ```
 
 ## API migration

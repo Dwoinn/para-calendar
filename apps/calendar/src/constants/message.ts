@@ -1,1 +1,1 @@
-export const MESSAGE_PREFIX = '@para-calendar/calendar: ';
+export const MESSAGE_PREFIX = '@dwoinn/para-calendar: ';

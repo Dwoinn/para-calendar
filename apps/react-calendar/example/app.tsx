@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import './app.css';
 
-import type { EventObject, ExternalEventTypes, Options } from '@para-calendar/calendar';
-import { TZDate } from '@para-calendar/calendar';
+import type { EventObject, ExternalEventTypes, Options } from '@dwoinn/para-calendar';
+import { TZDate } from '@dwoinn/para-calendar';
 import type { ChangeEvent, MouseEvent } from 'react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 

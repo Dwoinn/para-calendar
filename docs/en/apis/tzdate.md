@@ -5,7 +5,7 @@
 TZDate is a custom date class created to handle timezones. When creating an event, the event start date or end date can be specified with TZDate, and the date and time-related values in the calendar API are returned as TZDate.
 
 ```js
-import Calendar, { TZDate } from '@para-calendar/calendar';
+import Calendar, { TZDate } from '@dwoinn/para-calendar';
 
 const calendar = new Calendar('#container');
 calendar.createEvents([
@@ -42,7 +42,7 @@ TZDate can be created with the following parameters.
 Except for the TZDate instance, the rest of the parameters are the same as the `Date()` constructor parameters, so refer to [`Date()` constructor parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date#parameters) for details.
 
 ```js
-import { TZDate } from '@para-calendar/calendar';
+import { TZDate } from '@dwoinn/para-calendar';
 
 const now = new TZDate(); // no parameters
 const date = new TZDate(1654052400000); // UNIX timestamp value

@@ -1,5 +1,5 @@
 import { expect } from '@playwright/test';
-import { LocalDate, MomentDate, UTCDate } from '@para-calendar/date';
+import { LocalDate, MomentDate, UTCDate } from '@dwoinn/para-date';
 import { advanceTo } from 'jest-date-mock';
 import moment from 'moment-timezone';
 import type { TimeZone } from 'timezone-mock';

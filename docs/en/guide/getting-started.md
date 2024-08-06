@@ -33,8 +33,8 @@ TOAST UI products are registered in the [npm](https://www.npmjs.com/) package re
 #### npm
 
 ```sh
-npm install @para-calendar/calendar # latest version
-npm install @para-calendar/calendar@<version> # specific version since 2.0
+npm install @dwoinn/para-calendar # latest version
+npm install @dwoinn/para-calendar@<version> # specific version since 2.0
 npm install tui-calendar@<version> # 1.x legacy version
 ```
 
@@ -93,12 +93,12 @@ TOAST UI Calendar can be instantiated through the constructor function. There ar
 
 ```js
 /* ES6 module in Node.js environment */
-import Calendar from '@para-calendar/calendar';
+import Calendar from '@dwoinn/para-calendar';
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-const Calendar = require('@para-calendar/calendar');
+const Calendar = require('@dwoinn/para-calendar');
 ```
 
 ```js
@@ -114,12 +114,12 @@ Since the bundle size of IE11 is about 30% larger than that of the default bundl
 
 ```js
 /* ES6 module in Node.js environment */
-import Calendar from '@para-calendar/calendar/ie11';
+import Calendar from '@dwoinn/para-calendar/ie11';
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-const Calendar = require('@para-calendar/calendar/ie11');
+const Calendar = require('@dwoinn/para-calendar/ie11');
 ```
 
 ```html
@@ -136,12 +136,12 @@ To use the calendar, you need to add a CSS file. You can import the CSS file thr
 
 ```js
 /* ES6 module in Node.js environment */
-import '@para-calendar/calendar/dist/para-calendar.min.css'; // Stylesheet for calendar
+import '@dwoinn/para-calendar/dist/para-calendar.min.css'; // Stylesheet for calendar
 ```
 
 ```js
 /* CommonJS in Node.js environment */
-require('@para-calendar/calendar/dist/para-calendar.min.css');
+require('@dwoinn/para-calendar/dist/para-calendar.min.css');
 ```
 
 ```html
