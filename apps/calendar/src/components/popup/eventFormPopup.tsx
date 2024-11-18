@@ -96,7 +96,7 @@ export function EventFormPopup() {
   const { calendars } = useStore(calendarSelector);
   const { hideAllPopup } = useDispatch('popup');
   const popupParams = useStore(eventFormPopupParamSelector);
-  const { start, end, popupArrowPointPosition, close, isCreationPopup, isPayable, event } = popupParams ?? {};
+  const { start, end, popupArrowPointPosition, close, isCreationPopup, isPayable, event, isAllday } = popupParams ?? {};
   const eventBus = useEventBus();
   const formPopupSlot = useFloatingLayer('formPopupSlot');
   const [formState, formStateDispatch] = useFormState(calendars[0]?.id);
@@ -192,6 +192,11 @@ export function EventFormPopup() {
     <div role="dialog" className={classNames.popupContainer} ref={popupContainerRef} style={style}>
       <form onSubmit={onSubmit}>
         <div className={classNames.formContainer}>
+          <TitleInputBox
+            title={formState.title}
+            isPrivate={formState.isPrivate}
+            formStateDispatch={formStateDispatch}
+          />
           {calendars?.length ? (
             <CalendarSelector
               selectedCalendarId={formState.calendarId}
@@ -201,15 +206,10 @@ export function EventFormPopup() {
           ) : (
             <PopupSection />
           )}
-          <TitleInputBox
-            title={formState.title}
-            isPrivate={formState.isPrivate}
-            formStateDispatch={formStateDispatch}
-          />
           <DateSelector
             start={start}
             end={end}
-            isAllday={formState.isAllday}
+            isAllday={isAllday}
             formStateDispatch={formStateDispatch}
             ref={datePickerRef}
           />
